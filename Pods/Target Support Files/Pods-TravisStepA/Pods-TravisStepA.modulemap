@@ -1,0 +1,6 @@
+framework module Pods_TravisStepA {
+  umbrella header "Pods-TravisStepA-umbrella.h"
+
+  export *
+  module * { export * }
+}
