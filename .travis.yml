@@ -5,9 +5,9 @@ language: objective-c
 
 osx_image: xcode8
 
-xcode_workspace: TravisCITest.xcworkspace
+xcode_workspace: TravisStepA.xcodeproj
 
-xcode_scheme: TravisCITest
+xcode_scheme: TravisStepA
 
 xcode_sdk: iphonesimulator10.0
 
