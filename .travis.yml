@@ -5,10 +5,10 @@ language: objective-c
 
 osx_image: xcode8
 
-xcode_project: TravisStepA.xcodeproj
+xcode_project: TravisStepA.xcworkspace
 
 xcode_scheme: TravisStepA
 
 xcode_sdk: iphonesimulator10.0
 
-script: xcodebuild -project TravisStepA.xcodeproj -scheme TravisStepA -sdk iphonesimulator10.0
+script: xcodebuild -workspace TravisStepA.xcworkspace -scheme TravisStepA -sdk iphonesimulator10.0
