@@ -5,7 +5,7 @@ language: objective-c
 
 osx_image: xcode8
 
-xcode_workspace: TravisStepA.xcodeproj
+xcode_project: TravisStepA.xcodeproj
 
 xcode_scheme: TravisStepA
 
