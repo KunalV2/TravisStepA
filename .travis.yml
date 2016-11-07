@@ -4,4 +4,4 @@ xcode_project: TravisStepA.xcodeproj #3
 xcode_scheme: TravisStepA #4
 xcode_sdk: iphonesimulator10.0 #5
 
-script: xcodebuild -xcodeproj TravisStepA.xcodeproj -scheme TravisStepA -sdk iphonesimulator10.0
+script: xcodebuild -project TravisStepA.xcodeproj -scheme TravisStepA -sdk iphonesimulator10.0
