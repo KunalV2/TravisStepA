@@ -12,6 +12,7 @@
 		C3789FF21DD0626E00B98612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3789FF01DD0626E00B98612 /* Main.storyboard */; };
 		C3789FF41DD0626E00B98612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3789FF31DD0626E00B98612 /* Assets.xcassets */; };
 		C3789FF71DD0626E00B98612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3789FF51DD0626E00B98612 /* LaunchScreen.storyboard */; };
+		D2D560E5270AB0A3928E41AF /* Pods_TravisStepA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DB123AFDB82DC9DCAFBCBD /* Pods_TravisStepA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		C3789FF31DD0626E00B98612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3789FF61DD0626E00B98612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3789FF81DD0626E00B98612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC4862E3D7653DBD6B63CFC /* Pods-TravisStepA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisStepA.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisStepA/Pods-TravisStepA.release.xcconfig"; sourceTree = "<group>"; };
+		F4DB123AFDB82DC9DCAFBCBD /* Pods_TravisStepA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisStepA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54324A9AD09FA0ABC098078 /* Pods-TravisStepA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisStepA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisStepA/Pods-TravisStepA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D560E5270AB0A3928E41AF /* Pods_TravisStepA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42696EC044126A6B7A73C901 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F54324A9AD09FA0ABC098078 /* Pods-TravisStepA.debug.xcconfig */,
+				CCC4862E3D7653DBD6B63CFC /* Pods-TravisStepA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4419A31D7ED747F905211FB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB123AFDB82DC9DCAFBCBD /* Pods_TravisStepA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3789FE01DD0626D00B98612 = {
 			isa = PBXGroup;
 			children = (
 				C3789FEB1DD0626E00B98612 /* TravisStepA */,
 				C3789FEA1DD0626E00B98612 /* Products */,
+				42696EC044126A6B7A73C901 /* Pods */,
+				4419A31D7ED747F905211FB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3789FFB1DD0626E00B98612 /* Build configuration list for PBXNativeTarget "TravisStepA" */;
 			buildPhases = (
+				3C59E802D241603274F45794 /* [CP] Check Pods Manifest.lock */,
 				C3789FE51DD0626D00B98612 /* Sources */,
 				C3789FE61DD0626D00B98612 /* Frameworks */,
 				C3789FE71DD0626D00B98612 /* Resources */,
+				36399217FD9F1753728813FC /* [CP] Embed Pods Frameworks */,
+				E101F6A7648558E969D3F0B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36399217FD9F1753728813FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisStepA/Pods-TravisStepA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C59E802D241603274F45794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E101F6A7648558E969D3F0B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisStepA/Pods-TravisStepA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3789FE51DD0626D00B98612 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		C3789FFC1DD0626E00B98612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54324A9AD09FA0ABC098078 /* Pods-TravisStepA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisStepA/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		C3789FFD1DD0626E00B98612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC4862E3D7653DBD6B63CFC /* Pods-TravisStepA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisStepA/Info.plist;
@@ -297,6 +374,7 @@
 				C3789FFD1DD0626E00B98612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
